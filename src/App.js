@@ -78,7 +78,7 @@ function App() {
 
   
 
-      <div className='movies grid grid-cols-4 mt-8 md:grid-cols-3'>
+      <div className='movies grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-8'>
         {movies.map((movie) => (
           <MovieCard key={movie.id} {...movie} favouriteComponent = {AddFavourites}/>
         ))}
